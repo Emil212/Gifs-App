@@ -1,0 +1,17 @@
+<!-- Los corchetes sirven para alterar el valor y que no se tomo como un string -->
+<!-- Se hace referencia al la interfaz gif -->
+
+<div class="row">
+  <div
+    *ngFor="let gif of resultados"
+    class="col-md-4 col-sm-6 animate_animated animate_fadeIn"
+  >
+    <div class="card m-1">
+      <img
+        [src]="gif.images.downsized_medium.url"
+        [alt]="gif.title"
+        class="card-img-top"
+      />
+    </div>
+  </div>
+</div>
